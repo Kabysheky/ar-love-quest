@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Clue 1</title>
+  <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+</head>
+
+<body>
+<a-scene
+  mindar-image="imageTargetSrc: targets.mind"
+  vr-mode-ui="enabled: false"
+  device-orientation-permission-ui="enabled: true">
+
+  <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+  <a-entity mindar-image-target="targetIndex: 0">
+    <a-text
+      value="This is where my favorite story began ❤️"
+      color="pink"
+      align="center"
+      position="0 0 0"
+      scale="0.7 0.7 0.7">
+    </a-text>
+  </a-entity>
+
+</a-scene>
+
+<a href="scene2.html"
+ style="position:fixed;bottom:20px;left:50%;transform:translateX(-50%);
+ color:white;background:pink;padding:10px;border-radius:10px;">
+Next
+</a>
+
+</body>
+</html>
